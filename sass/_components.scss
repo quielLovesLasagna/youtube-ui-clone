@@ -1,0 +1,97 @@
+.logo {
+	&__hamburger {
+		height: var(--icon-size);
+		cursor: pointer;
+	}
+
+	&__youtube {
+		height: var(--youtube-size);
+	}
+}
+
+.search {
+	&__icon,
+	&__voice-icon {
+		height: var(--icon-size);
+	}
+
+	&__input {
+		height: 4rem;
+		padding-left: 1rem;
+		flex: 1 0 0;
+		font-size: 1.6rem;
+		border: 1px solid var(--cl-white-3);
+		border-radius: 0.2rem;
+		box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+	}
+
+	&__button {
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 6.6rem;
+		height: 4rem;
+		margin: 0 1rem 0 -1px;
+		background-color: var(--cl-bg-grey-2);
+		border: 1px solid var(--cl-white-3);
+		border-radius: 0 0.2rem 0 0;
+	}
+
+	&__voice-button {
+		cursor: pointer;
+		width: 4rem;
+		height: 4rem;
+		border: none;
+		background-color: var(--cl-bg-grey-2);
+		border-radius: 50%;
+	}
+}
+
+.user {
+	&__upload-icon,
+	&__youtube-apps-icon,
+	&__notifications-icon {
+		cursor: pointer;
+		height: var(--icon-size);
+	}
+
+	&__notifications {
+		position: relative;
+
+		&::after {
+			content: "3";
+			background-color: var(--cl-red);
+			color: var(--cl-white);
+			padding: 0.2rem 0.5rem;
+			border-radius: 50%;
+			position: absolute;
+			top: -2px;
+			right: -4px;
+		}
+	}
+
+	&__avatar {
+		cursor: pointer;
+		height: var(--avatar-size);
+	}
+}
+
+.nav {
+	&__item {
+		cursor: pointer;
+		height: 7.4rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__text {
+		margin-top: 4px;
+	}
+
+	&__icon {
+		height: var(--icon-size);
+	}
+}
