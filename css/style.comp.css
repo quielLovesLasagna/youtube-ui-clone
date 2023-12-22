@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+:root {
+  --cl-txt-black: #000;
+  --cl-txt-grey: #606060;
+  --cl-bg-grey: #f8f8f8;
+  --cl-bg-grey-2: #f0f0f0;
+  --cl-white: #fff;
+  --cl-white-2: #e4e4e4;
+  --cl-white-3: #c0c0c0;
+  --cl-red: #c80000;
+  --icon-size: 2.4rem;
+  --youtube-size: 2rem;
+  --avatar-size: 3.2rem; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--cl-bg-grey);
+  padding-top: 8rem;
+  padding-left: 9.6rem;
+  padding-right: 2.4rem; }
+
+.logo__hamburger {
+  height: var(--icon-size);
+  cursor: pointer; }
+
+.logo__youtube {
+  height: var(--youtube-size);
+  cursor: pointer; }
+
+.search__icon, .search__voice-icon {
+  height: var(--icon-size); }
+
+.search__input {
+  height: 4rem;
+  padding-left: 1rem;
+  flex: 1 0 0;
+  font-size: 1.6rem;
+  border: 1px solid var(--cl-white-3);
+  border-radius: 0.2rem;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05); }
+
+.search__button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6.6rem;
+  height: 4rem;
+  margin: 0 1rem 0 -1px;
+  background-color: var(--cl-bg-grey-2);
+  border: 1px solid var(--cl-white-3);
+  border-radius: 0 0.2rem 0 0; }
+
+.search__voice-button {
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  background-color: var(--cl-bg-grey-2);
+  border-radius: 50%; }
+
+.user__upload-icon, .user__youtube-apps-icon, .user__notifications-icon {
+  cursor: pointer;
+  height: var(--icon-size); }
+
+.user__notifications {
+  position: relative; }
+  .user__notifications::after {
+    content: "3";
+    background-color: var(--cl-red);
+    color: var(--cl-white);
+    padding: 0.2rem 0.5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    right: -4px; }
+
+.user__avatar {
+  cursor: pointer;
+  height: var(--avatar-size); }
+
+.nav__item {
+  cursor: pointer;
+  height: 7.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .nav__item:hover {
+    background-color: var(--cl-bg-grey-2); }
+
+.nav__text {
+  margin-top: 4px; }
+
+.nav__icon {
+  height: var(--icon-size); }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5.5rem;
+  padding: 0 2.4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--cl-white);
+  border: 1px solid var(--cl-white-2);
+  z-index: 10; }
+
+.logo {
+  display: flex;
+  align-items: center; }
+  .logo__hamburger {
+    margin-right: 2.4rem; }
+
+.search {
+  display: flex;
+  align-items: center;
+  max-width: 50rem;
+  height: 5.5rem;
+  margin: 0 3.5rem 0 7rem;
+  flex: 1; }
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 18rem;
+  flex-shrink: 0; }
+
+.nav {
+  position: fixed;
+  top: 5.4rem;
+  bottom: 0;
+  left: 0;
+  background-color: var(--cl-white);
+  width: 7.2rem;
+  padding-top: 5px;
+  z-index: 200; }
+
+.video__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 4rem;
+  column-gap: 1.6rem; }
+  @media only screen and (min-width: 1000px) {
+    .video__grid {
+      grid-template-columns: repeat(4, 1fr); } }
+  @media only screen and (max-width: 999px) {
+    .video__grid {
+      grid-template-columns: repeat(3, 1fr); } }
+  @media only screen and (max-width: 750px) {
+    .video__grid {
+      grid-template-columns: repeat(2, 1fr); } }
+
+.video__preview {
+  cursor: pointer; }
+
+.video__thumbnail-container {
+  margin-bottom: 1.2rem;
+  position: relative; }
+
+.video__duration {
+  color: var(--cl-white);
+  background-color: var(--cl-txt-black);
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+  position: absolute;
+  right: 5px;
+  bottom: 5px; }
+
+.video__thumbnail {
+  display: block;
+  width: 100%; }
+
+.video__info-container {
+  display: grid;
+  grid-template-columns: 5rem 1fr; }
+
+.video__channel-avatar {
+  width: 3.6rem;
+  border-radius: 50%; }
+
+.video__title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2rem;
+  margin-bottom: 1rem; }
+
+.video__author {
+  font-size: 1.2rem;
+  color: var(--cl-txt-grey);
+  margin-bottom: 0.4rem; }
+
+.video__statistics {
+  font-size: 1.2rem;
+  color: var(--cl-txt-grey); }
