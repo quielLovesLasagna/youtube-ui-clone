@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://quiel-simon-says-game.netlify.app/](https://quiel-simon-says-game.netlify.app/)
+- Live Site URL: [https://quiel-youtube-ui-clone.netlify.app/](https://quiel-youtube-ui-clone.netlify.app/)
 
 ## My process
 
