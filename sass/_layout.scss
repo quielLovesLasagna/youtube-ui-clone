@@ -49,3 +49,66 @@ header {
 	padding-top: 5px;
 	z-index: 200;
 }
+
+.video {
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(4, minmax(33.5rem, 1fr));
+		row-gap: 4rem;
+		column-gap: 1.6rem;
+	}
+
+	&__preview {
+		cursor: pointer;
+	}
+
+	&__thumbnail-container {
+		margin-bottom: 1.2rem;
+		position: relative;
+	}
+
+	&__duration {
+		color: var(--cl-white);
+		background-color: var(--cl-txt-black);
+		font-size: 1.2rem;
+		font-weight: 500;
+		padding: 4px;
+		border-radius: 2px;
+		position: absolute;
+		right: 5px;
+		bottom: 5px;
+	}
+
+	&__thumbnail {
+		display: block;
+		width: 100%;
+	}
+
+	&__info-container {
+		display: grid;
+		grid-template-columns: 5rem 1fr;
+	}
+
+	&__channel-avatar {
+		width: 3.6rem;
+		border-radius: 50%;
+	}
+
+	&__title {
+		font-size: 1.4rem;
+		font-weight: 500;
+		line-height: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	&__author {
+		font-size: 1.2rem;
+		color: var(--cl-txt-grey);
+		margin-bottom: 0.4rem;
+	}
+
+	&__statistics {
+		font-size: 1.2rem;
+		color: var(--cl-txt-grey);
+	}
+}

@@ -13,7 +13,7 @@
 	--cl-txt-grey: #606060;
 
 	--cl-bg-grey: #f8f8f8;
-	--cl-bg-grey-2: rgb(240, 240, 240);
+	--cl-bg-grey-2: #f0f0f0;
 
 	--cl-white: #fff;
 	--cl-white-2: #e4e4e4;
@@ -32,4 +32,8 @@ html {
 body {
 	min-height: 100vh;
 	font-family: "Roboto", sans-serif;
+	background-color: var(--cl-bg-grey);
+	padding-top: 8rem;
+	padding-left: 9.6rem;
+	padding-right: 2.4rem;
 }
