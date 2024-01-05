@@ -1,4 +1,4 @@
-# Simon Says Game Project
+# YouTube UI Clone
 
 A very simple clone of YouTube's UI (This is not functional at all)
 
